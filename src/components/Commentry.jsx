@@ -1,12 +1,13 @@
 const Commentry = ({ textRef }) => {
-    return (
+  return (
+    <div className="flex justify-center mt-8">
       <textarea
         ref={textRef}
-        placeholder="type commentary"
-        className="h-[7rem] w-[30rem] rounded-lg mx-[23rem] mt-5 placeholder-black bg-gray-400 text-white p-2 resize-none"
+        placeholder="Type commentary..."
+        className="h-[8rem] w-[30rem] rounded-2xl bg-gray-200 placeholder-gray-600 text-gray-800 p-4  focus:outline-none focus:ring-2 focus:ring-blue-400 shadow-md"
       />
-    );
-  };
-  
-  export default Commentry;
-  
+    </div>
+  );
+};
+
+export default Commentry;
